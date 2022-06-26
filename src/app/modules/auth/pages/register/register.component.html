@@ -1,0 +1,5 @@
+<div [ngSwitch]="type">
+  <app-register-security *ngSwitchCase="pageType.Security"></app-register-security>
+  <app-register-personal *ngSwitchCase="pageType.Personal"></app-register-personal>
+  <app-register-confirmation *ngSwitchCase="pageType.Confirmation"></app-register-confirmation>
+</div>

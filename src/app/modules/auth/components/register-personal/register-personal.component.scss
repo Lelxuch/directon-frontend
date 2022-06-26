@@ -1,0 +1,32 @@
+@import 'src/styles/base/variables';
+
+.register-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.register-outer {
+  position: relative;
+}
+
+.register-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: $border-radius-1;
+  padding: 50px;
+  z-index: 100;
+  background: #ffffff;
+}
+
+.circles {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: -200px;
+  left: -150px;
+}

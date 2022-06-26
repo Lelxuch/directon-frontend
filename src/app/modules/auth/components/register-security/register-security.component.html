@@ -1,0 +1,45 @@
+<div class="register-page">
+  <div class="register-outer">
+
+    <form [formGroup]="form" (submit)="submit()" class="register-box">
+
+      <div class="text-center">
+        <h1>Sign up</h1>
+      </div>
+
+      <div class="form-group">
+        <label>Email</label>
+        <input formControlName="email" class="form-control" type="text">
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input formControlName="password" class="form-control" type="password">
+      </div>
+      <div class="form-group">
+        <label>Repeat password</label>
+        <input formControlName="repPassword" class="form-control" type="password">
+      </div>
+
+      <div class="d-flex justify-content-end">
+        <a routerLink="/login" routerLinkActive="true">Sign in</a>
+      </div>
+
+      <button class="btn btn-primary mt-3 pt-3 pb-3">Next</button>
+
+      <div class="d-flex justify-content-between align-items-center mt-2 mb-2">
+        <hr class="w-100">
+        <span class="pl-3 pr-3">or</span>
+        <hr class="w-100">
+      </div>
+
+      <button type="submit" class="btn btn-light pt-3 pb-3">Sign up with Google</button>
+
+    </form>
+
+    <svg class="circles" viewBox="0 0 291 262" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="100" cy="162" r="100" fill="#9F8FE1" fill-opacity="0.44"/>
+      <circle cx="191" cy="100" r="100" fill="#9F8FE1" fill-opacity="0.44"/>
+    </svg>
+
+  </div>
+</div>

@@ -1,0 +1,184 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+@import '~ngx-toastr/toastr';
+
+@import 'styles/base/variables';
+
+//$body-bg: #252b36;
+//$body-color: #ffffff;
+//$font-size-base: 0.97rem;
+$primary: $app-primary;
+//$enable-rounded: false;
+
+$theme-colors: map-merge(
+    $theme-colors,
+    (
+      'primary': $app-primary,
+      //"secondary":  $secondary,
+      //"success":    $success,
+      //"info":       $info,
+      //"warning":    $warning,
+      //"danger":     $danger,
+      //"light":      $light,
+      //"dark":       $dark
+    )
+);
+$grid-breakpoints: (
+  xxxs: 0,
+  xxs: 320px,
+  xs: 568px,
+  sm: 667px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1440px,
+  xxxl: 1600px
+);
+
+$container-max-widths: (
+  xxxs: 0,
+  xxs: 320px,
+  xs: 568px,
+  sm: 667px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1440px,
+  xxxl: 1600px
+);
+
+$link-color: $app-primary;
+
+//$navbar-padding-x: 0.1rem;
+$navbar-padding-y: 0.1rem;
+$navbar-dark-hover-color: #fff;
+$navbar-dark-color: $app-link-color;
+
+$nav-pills-link-active-bg: $app-primary;
+
+$dropdown-link-active-bg: $app-primary;
+
+$list-group-border-radius: 0;
+$list-group-bg: #fff;
+$list-group-color: #49617b;
+$list-group-active-color: #fff;
+$list-group-active-bg: $app-primary;
+$list-group-border-color: #fff;
+$list-group-active-border-color: #fff;
+$list-group-item-padding-x: 0.3rem;
+//$list-group-item-padding-y: 0.4rem;
+$list-group-item-padding-y: 0.2rem;
+
+//$modal-content-color: #212529;
+
+
+//$table-bg: $app-primary2;
+//$table-head-bg: #fff000;
+//$table-color: #fff;
+//$table-border-color: #000000;
+
+
+$pagination-bg: $app-primary;
+$pagination-color: #fff;
+$pagination-active-bg: $app-primary2;
+$pagination-active-border-color: $app-primary2;
+$pagination-border-color: $app-primary;
+$pagination-disabled-bg: $app-primary;
+$pagination-disabled-color: #fff;
+$pagination-disabled-border-color: $app-primary;
+$pagination-padding-y: 0.40rem;
+$pagination-padding-x: 0.70rem;
+$pagination-disabled-bg: $app-primary2;
+$pagination-disabled-border-color: $app-primary2;
+
+
+//$link-color: #dfdfdf;
+//$link-color: $app-link-color;
+//$link-hover-color: #ffffff;
+
+
+//$badge-font-size: 85%;
+$badge-font-size: 100%;
+
+
+//$card-bg: $app-primary;
+
+$input-focus-border-color: $app-primary;
+
+
+@import '~bootstrap/scss/root';
+@import '~bootstrap/scss/reboot';
+@import '~bootstrap/scss/type';
+@import '~bootstrap/scss/images';
+@import '~bootstrap/scss/code';
+@import '~bootstrap/scss/grid';
+@import '~bootstrap/scss/tables';
+@import '~bootstrap/scss/forms';
+@import '~bootstrap/scss/buttons';
+@import '~bootstrap/scss/transitions';
+@import '~bootstrap/scss/dropdown';
+@import '~bootstrap/scss/button-group';
+@import '~bootstrap/scss/input-group';
+@import '~bootstrap/scss/custom-forms';
+@import '~bootstrap/scss/nav';
+@import '~bootstrap/scss/navbar';
+@import '~bootstrap/scss/card';
+@import '~bootstrap/scss/breadcrumb';
+@import '~bootstrap/scss/pagination';
+@import '~bootstrap/scss/badge';
+@import '~bootstrap/scss/jumbotron';
+@import '~bootstrap/scss/alert';
+@import '~bootstrap/scss/progress';
+@import '~bootstrap/scss/media';
+@import '~bootstrap/scss/list-group';
+@import '~bootstrap/scss/close';
+@import '~bootstrap/scss/toasts';
+@import '~bootstrap/scss/modal';
+@import '~bootstrap/scss/tooltip';
+@import '~bootstrap/scss/popover';
+@import '~bootstrap/scss/carousel';
+@import '~bootstrap/scss/spinners';
+@import '~bootstrap/scss/utilities';
+@import '~bootstrap/scss/print';
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+//*:focus {
+//  outline: 0 !important;
+//  box-shadow: none !important;
+//}
+//
+//*:active {
+//  outline: none !important;
+//  box-shadow: none !important;
+//}
+//
+//.task-block-header {
+//  background-color: $app-primary2;
+//  padding: 0.4rem;
+//}
+//
+//.task-minblock-header {
+//  background-color: $app-primary;
+//  padding: 0.4rem;
+//}
+
+.toast-container {
+  .ngx-toastr {
+    box-shadow: none;
+  }
+}
+
+/* Important */
+//@import 'styles/base/base';
+//
+@import 'styles/components/buttons';
+//@import 'styles/components/dropdown';
+//@import 'styles/components/pagination';
+//
+//@import 'styles/layout/navigation';
+@import 'styles/layout/forms';
+//@import 'styles/layout/table';

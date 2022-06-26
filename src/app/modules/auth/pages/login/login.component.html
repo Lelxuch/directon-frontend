@@ -1,0 +1,41 @@
+<div class="login-page">
+  <div class="login-outer">
+
+    <form class="login-box">
+
+      <div class="text-center">
+        <h1>Directon</h1>
+      </div>
+
+      <div class="form-group">
+        <label>Email</label>
+        <input class="form-control" type="text">
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input class="form-control" type="text">
+      </div>
+
+      <div class="d-flex justify-content-end">
+        <a routerLink="/register/security" routerLinkActive="true">Sign up</a>
+      </div>
+
+      <button class="btn btn-primary mt-3 pt-3 pb-3">Sign in</button>
+
+      <div class="d-flex justify-content-between align-items-center mt-2 mb-2">
+        <hr class="w-100">
+        <span class="pl-3 pr-3">or</span>
+        <hr class="w-100">
+      </div>
+
+      <button class="btn btn-light pt-3 pb-3" (click)="loginWithGoogle()">Sign in with Google</button>
+
+    </form>
+
+    <svg class="circles" viewBox="0 0 291 262" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="100" cy="162" r="100" fill="#9F8FE1" fill-opacity="0.44"/>
+      <circle cx="191" cy="100" r="100" fill="#9F8FE1" fill-opacity="0.44"/>
+    </svg>
+
+  </div>
+</div>

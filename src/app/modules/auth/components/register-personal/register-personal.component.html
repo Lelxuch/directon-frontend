@@ -1,0 +1,33 @@
+<div class="register-page">
+  <div class="register-outer">
+
+    <form [formGroup]="form" (submit)="submit()" class="register-box">
+
+      <div class="text-center">
+        <h1>Sign up</h1>
+      </div>
+
+      <div class="form-group">
+        <label>Username</label>
+        <input formControlName="username" class="form-control" type="text">
+      </div>
+      <div class="form-group">
+        <label>First name</label>
+        <input formControlName="firstName" class="form-control" type="text">
+      </div>
+      <div class="form-group">
+        <label>Last name</label>
+        <input formControlName="lastName" class="form-control" type="text">
+      </div>
+
+      <button type="submit" class="btn btn-primary mt-3 pt-3 pb-3">Next</button>
+
+    </form>
+
+    <svg class="circles" viewBox="0 0 291 262" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="100" cy="162" r="100" fill="#9F8FE1" fill-opacity="0.44"/>
+      <circle cx="191" cy="100" r="100" fill="#9F8FE1" fill-opacity="0.44"/>
+    </svg>
+
+  </div>
+</div>
